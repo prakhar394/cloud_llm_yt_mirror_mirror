@@ -1,0 +1,23 @@
+python-dotenv
+pandas
+youtube-transcript-api
+google-api-python-client
+pytube
+flask
+fastapi
+uvicorn
+pydantic
+nltk
+transformers
+boto3
+xlsxwriter
+openpyxl
+yt-dlp
+gunicorn
+openai
+mlflow
+google-generativeai
+
+# Corrected torch installation:
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
