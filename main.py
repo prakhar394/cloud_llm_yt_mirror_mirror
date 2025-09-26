@@ -93,7 +93,7 @@ async def analyze_with_llm_endpoint(request: TranscriptRequest):
     try:
         if not request.transcript:
             raise HTTPException(status_code=400, detail="Transcript cannot be empty.")
-        analysis_result = analyze_transcript_with_llm(request.transcript, model_name="gemini")
+        analysis_result = analyze_transcript_with_llm(request.transcript, model_name="openai")
         
         return analysis_result
     except ValueError as e:
