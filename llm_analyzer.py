@@ -58,7 +58,7 @@ def analyze_with_gemini(transcript: str) -> Dict[str, Any]:
     if not os.getenv("GEMINI_API_KEY"):
         raise ValueError("GEMINI_API_KEY not set.")
     
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-1.5-flash-001')
     full_prompt = f"{SYSTEM_PROMPT_V1}\n\n**Transcript to Analyze:**\n```\n{transcript}\n```"
     
     # Gemini requires the response_mime_type for JSON output
