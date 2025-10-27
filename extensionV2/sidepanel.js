@@ -95,6 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (gaugeStatusResultEl) gaugeStatusResultEl.textContent = '';
     if (warningLineEl) warningLineEl.style.display = 'none';
     if (detailsEl) detailsEl.style.display = 'none';
+    if (learnMoreBtn) learnMoreBtn.textContent = 'Learn More';
 
     resetResultsDomPlaceholders();
   }
