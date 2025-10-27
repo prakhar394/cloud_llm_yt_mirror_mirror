@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
   let lastAnalysisData = null;
   let originalTranscript = '';
 
-  // Concurrency / race guards
   let isAnalyzing = false;
   let runId = 0;                 // increments every run
   let latestRunId = 0;           // the most recent run we've started
