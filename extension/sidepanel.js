@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             if (!response.ok) throw new Error((await response.json()).detail || 'Backend error.');
             lastAnalysisData = await response.json();
-            
+
             if (modelType === 'roberta') {
                 updateRobertaUI(lastAnalysisData);
                 showView('roberta-results-view');
